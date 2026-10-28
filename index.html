@@ -479,7 +479,7 @@ ul,ol{list-style:none}
    MOCK DATA — edit here. Nothing in this file calls a real API.
    ===================================================================== */
 const DATA = {
-  user: { name: "Alex Pop", first: "Alex", handle: "@alex.reads", initials: "AP", email: "alex@dogear.app", since: "September 2026" },
+  user: { name: "Antonio Simin", first: "Antonio", handle: "@antonio.simin", initials: "AS", email: "antonio@dogear.app", since: "September 2026" },
 
   // Starting values (Reset demo in Settings brings these back)
   start: { streak: 14, longest: 21, points: 1280, level: 7, xp: 340, xpNext: 500, quizzesPassed: 38, accuracy: 91, booksFinished: 5, pagesRead: 2496 },
@@ -497,13 +497,13 @@ const DATA = {
   ],
 
   friends: [
-    { name: "Rogers", streak: 32, reading: "Dune Messiah" },
+    { name: "Stanciu", streak: 32, reading: "Dune Messiah" },
     { name: "Andrei", streak: 9,  reading: "Moromeții" },
     { name: "George", streak: 21, reading: "Enigma Otiliei" },
     { name: "Stefan", streak: 14, reading: "Ion" },
-    { name: "Mark",   streak: 5,  reading: "Dune" },
-    { name: "Joshua", streak: 3,  reading: "Amintiri din copilărie" },
-    { name: "Grace",  streak: 47, reading: "Dune" }
+    { name: "Yasmina",   streak: 5,  reading: "Dune" },
+    { name: "Maria", streak: 3,  reading: "Amintiri din copilărie" },
+    { name: "Timeea",  streak: 47, reading: "Dune" }
   ],
   suggested: [
     { name: "Ioana", mutual: 3 },
@@ -512,7 +512,7 @@ const DATA = {
   ],
   duels: [
     { vs: "Andrei", goal: "Most pages this week", you: 142, them: 118, ends: "Ends in 3 days" },
-    { vs: "Grace",  goal: "Longest streak this month", you: 14, them: 21, ends: "Ends in 9 days" }
+    { vs: "Timeea",  goal: "Longest streak this month", you: 14, them: 21, ends: "Ends in 9 days" }
   ],
 
   /* ---------- Scripted AI quiz ----------
@@ -648,7 +648,7 @@ function renderLanding() {
           <li><div><b>Answer five questions</b><span>The AI writes them from the pages you just read.</span></div></li>
           <li><div><b>Keep your streak</b><span>Get 4 of 5 right and the day counts.</span></div></li>
         </ol>
-        <p class="network">${icon("users")}<span>Every book you upload joins the dogear network, so the next person who reads it gets sharper quizzes from day one.</span></p>
+        <p class="network">${icon("users")}<span>Every book you upload joins the dogear network, so the next person who wants it can easily find it.</span></p>
       </section>
       <div class="login dogear" id="loginForm">
         <h2>Log in</h2>
